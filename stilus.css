@@ -1,0 +1,115 @@
+body {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #6d92a0;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+}
+h4{
+    text-align: center;
+}
+a{
+    color: #ffffff;
+}
+a:hover{
+    text-decoration: underline;
+    color: #e2d9d9;
+}
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+    "h h"
+    "n n"
+    "a as"
+    "f f";
+}
+a {
+  text-decoration: none;
+}
+ul {
+  display: grid;
+  list-style-type: none;
+}
+
+header {
+  padding: 10px;
+  grid-area: h;
+  text-align: center;
+}
+nav {
+  grid-area: n;
+}
+article {
+  grid-area: a;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+aside {
+  grid-area: as;
+}
+footer {
+  grid-area: f;
+}
+img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+.cikk {
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+}
+.cikk p {
+    padding-top: 5px;;
+}
+span {
+    text-align: end;
+}
+.gomb {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+button {
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 2px;
+    border: 1px solid #000000;
+}
+.kosar{
+    background-color: #445b63;
+    height: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 800px) {
+    main {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas:
+          "h"
+          "n"
+          "a"
+          "as"
+          "f";
+      }
+      article{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .menu{
+        padding: 10px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
